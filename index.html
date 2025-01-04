@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>អំពីកម្មវីធី | ធនាគារ ABA កម្ពុជា</title>
+    <!-- Brower tab icon -->
+    <link
+      rel="shortcut icon"
+      href="assets/image/ABA-logo.png"
+      type="image/x-icon"
+    />
+    <!--  Animation link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- <link
+      rel="shortcut icon"
+      href="https://www.ababank.com/typo3conf/ext/boxmodel/Resources/Private/Templates/ABA/images/icons/ABA.svg"
+      type="image/x-icon"
+    /> -->
+    <!--  font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!--  link index.css -->
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="circle">
+      <div class="nested"></div>
+    </div>
+    <div class="header-container">
+      <div class="header-left">
+        <a href="" class="logo"
+          ><img src="./assets/image/ABA-logo.png" class="img-logo" alt=""
+        /></a>
+        <h2>មជ្ឈមណ្ឌលជំនួយការប្រើប្រាស់ ABA Mobile App</h2>
+      </div>
+      <div class="header-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          name=""
+          class="search"
+          id="search"
+          placeholder="ស្វែងរកអត្ថបទជំនួយ..."
+        />
+        <div class="line-top"></div>
+        <button type="button" class="button" id="lannguage">
+          ABA Mobile Guideline
+        </button>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="navbar-container" id="content">
+        <nav>
+          <ul class="navbar">
+            <li>
+              <span class="limenu">
+                <a href="#activate">
+                  <i class="icon fa-solid fa-mobile-screen"></i>
+                  របៀបActivate ABA Mobile</a
+                >
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </li>
+            <li>
+              <span class="limenu">
+                <a href="#fastacc">
+                  <i class="icon fa-solid fa-user-tag"></i>
+                  របៀបបើកគណនីរហ័សនៅក្នុងកម្មវិធី ABA Mobile</a
+                >
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </li>
+            <li>
+              <span class="limenu">
+                <a href="#changeaccname">
+                  <i class="icon fa-solid fa-dollar-sign"></i>
+                  រ​បៀបប្តូរឈ្មោះគណនីនៅក្នុងកម្មវិធី ABA Mobile
+                </a>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </li>
+            <li class="ABA-QR" id="QR">
+              <span class="limenu">
+                <a>
+                  <i class="icon fa-solid fa-qrcode"></i>
+                  រ​បៀបប្រើប្រាស់ ABA QR
+                </a>
+                <i class="close fa-solid fa-angle-right" id="down"></i>
+                <!-- <i class="open fa-solid fa-angle-up" id="up"></i> -->
+              </span>
+              <ul class="dropdown" id="QR-submenu">
+                <li id="li">
+                  <a href="#abaqrlinkacc">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    របៀប​ភ្ជាប់​គណនី​ទទួល​ សម្រាប់​ ABA QR
+                  </a>
+                </li>
+                <li id="li">
+                  <a href="#abaqrreceive">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    ​របៀប​ទទួល​ប្រាក់​ដោយ​ប្រើ​ ABA QR
+                  </a>
+                </li>
+                <li id="li">
+                  <a href="#paybyabaqr">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    ​របៀប​ផ្ញើ​ប្រាក់​តាម​ ABA QR
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="Card" id="Card">
+              <span class="limenu">
+                <a>
+                  <i class="icon fa-brands fa-cc-visa"></i>
+                  អំពីកាត
+                </a>
+                <i class="fa-solid fa-angle-right" id="cardIcondown"></i>
+                <!-- <i class="open fa-solid fa-angle-up" id="cardIconup"></i> -->
+              </span>
+              <ul class="dropdown" id="Credit-Card">
+                <li id="li">
+                  <a href="#artificialcard">
+                    <i class="fa-regular fa-credit-card"></i>
+                    កាតនិម្មិតលើទូរស័ព្ទ
+                  </a>
+                </li>
+                <li id="li">
+                  <a href="#plasticcard">
+                    <i class="fa-solid fa-credit-card"></i>
+                    កាតប្លាស្ទិកលើទូរស័ព្ទ
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="transfer" id="transfer">
+              <span class="limenu">
+                <a>
+                  <i class="icon fa-solid fa-arrow-right-arrow-left"></i>
+                  របៀបក្នុងការផ្ទេរប្រាក់ផ្សេងៗ
+                </a>
+                <i class="fa-solid fa-angle-down" id="transfer-icon-down"></i>
+              </span>
+              <ul class="dropdown" id="transfer-submenu">
+                <li>
+                  <i class="icon fa-solid fa-arrow-right-arrow-left"></i
+                  >របៀបផ្ទេរពី ABA ទៅបាគង
+                </li>
+                <li>
+                  <i class="icon fa-solid fa-arrow-right-arrow-left"></i
+                  >របៀបផ្ទេរពី ABA ទៅ Wing
+                </li>
+                <li>
+                  <i class="icon fa-solid fa-arrow-right-arrow-left"></i
+                  >របៀបផ្ទេរពី ABA ទៅ TrueMoney
+                </li>
+                <li>
+                  <i class="icon fa-solid fa-arrow-right-arrow-left"></i
+                  >របៀបផ្ទេរពី ABA ទៅ Pi Pay
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+      <div class="main-container">
+        <div class="main-content">
+          <div class="create-account" id="activate">
+            <div class="head">
+              <h1 class="title">+ របៀបActivate ABA Mobile</h1>
+              <div class="img">
+                <img src="./assets/image/pngwing.com.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ១ : មុនដំបូងអ្នកត្រូវដោនឡូតកម្មវិធី ABA Mobile
+                  ដែលមាននៅលើ App Store និង Play Store
+                </h3>
+                <br />
+                <h3>
+                  Step 1: First you need to download ABA mobile app that has
+                  both on App Store and Play Store
+                </h3>
+              </div>
+              <img src="./assets/image/Activate/download.png" alt="image" />
+            </div>
+            <div class="step" style="height: 800px">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ២ : បន្ទាប់ពីការដោនឡូតរួចហើយអ្នកនឹងឃើញមានជម្រើស
+                  ៣នៅពេលបើក ABA app ហើយយើងអាចមានជម្រើសក្នុងការ activate mobile
+                  app ជាមួយ ABA card ឬ ABA accountបាន។
+                </h3>
+                <br />
+                <h3>
+                  Step 2: After you download the app you will see this three
+                  options when opening it so you can choose between activate
+                  with ABA account or ABA card. It's your choice.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/Activate/between.png"
+                style="width: 400px; height: 100%"
+                alt="image"
+              />
+            </div>
+            <div class="step" style="height: 750px">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៣ : យើងត្រូវបញ្ចូលលេខអាខោនរបស់អ្នករួចចុចពាក្យ next
+                  សម្រាប់ជំហានបន្ទាប់ទៀត។
+                </h3>
+                <br />
+                <h3>
+                  Step 3: You need to input your account number and then click
+                  next for the next step.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/Activate/numberofAccount.png"
+                alt="image"
+                style="height: 70%; width: 400px"
+              />
+            </div>
+            <div class="step" id="step-4">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៤ : បញ្ចូលលេខទូរស័ព្ទរបស់អ្នកដែលបានចុះឈ្មោះជាមួយABA
+                  រួចចុចពាក្យ next បន្ទាប់មកអ្នកនឹងទទួលបានសារ code តាមរយៈ sms
+                  ដើម្បីធ្វើការបញ្ជាក់ថាជាអ្នក។
+                </h3>
+                <br />
+                <h3>
+                  Step 4: Enter your phone number registered with ABA and tap
+                  next after that you will recieve temporary code via sms to
+                  make sure that it is you.
+                </h3>
+              </div>
+
+              <img
+                src="./assets/image/Activate/PhoneNum.png"
+                alt="image"
+                class="img-1"
+                id="SMS-1"
+                style="height: 350px; width: 300px"
+              />
+              <img
+                src="./assets/image/Activate/SMS.png"
+                alt="image"
+                id="SMS-1"
+                class="img-1"
+                style="height: 350px; width: 300px"
+              />
+            </div>
+            <div class="step" id="step-5">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៥ : បង្កើតឈ្មោះអាខោនរបស់អ្នក
+                  និងលេខកូដ៤ខ្ទង់តែអ្នកមិនត្រូវបង្ហាញព័ត៌មានទាំងនេះទៅអ្នកដទៃឡើយដើម្បីការពារសុវត្ថិភាពអាខោនរបស់អ្នករួចចុចពាក្យ
+                  next។
+                </h3>
+                <br />
+                <h3>
+                  Step 5: You need to create a unique username and 4-digital PIN
+                  but remember not to share these two information to anyone for
+                  your account safety and tap next.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/Activate/username.png"
+                alt="image"
+                id="UserP"
+                style="height: 350px; width: 300px"
+              />
+              <img
+                src="./assets/image/Activate/4password.png"
+                style="height: 350px; width: 300px"
+                alt=""
+                id="UserP"
+              />
+            </div>
+            <div class="step" id="step-6">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៦ : ជំហានចុងក្រោយអ្នកមានអាចប្រើ ឬមិនប្រើ faceID ឬ
+                  fingerprintID បាននោះអ្នកអាចប្រើ ABA mobile app បានហើយ។
+                </h3>
+                <br />
+                <h3>
+                  Step 6: For the last step it is optional so you can use the
+                  app without fingerprintID or faceID and then you can
+                  successfully using the app.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/Activate/QRcode.png"
+                alt="image"
+                style="
+                  height: 100%;
+                  width: 400px;
+                  border-radius: 50px;
+                  border: 10px solid white;
+                "
+              />
+            </div>
+            <div class="step">
+              <div class="txt">
+                <h3>
+                  បើសិនជាអ្នកមិនទាន់ច្បាស់ត្រង់កន្លែងណាមួយអ្នកអាចមើលវីដេអូណែនាំនេះបន្ថែមបាន៖
+                </h3>
+                <h3>
+                  If you still find it difficult to understand here you can
+                  watch this video.
+                </h3>
+              </div>
+              <iframe
+                style="border-radius: 20px"
+                class="videoactivate"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PRjQDAianrU?si=CSFZvq6PhJNt9qTW"
+                title="YouTube video player"
+                frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <br />
+          <div class="create-account" id="fastacc">
+            <div class="head">
+              <h1 class="title">+ របៀបបើកគណនីរហ័សនៅក្នុងកម្មវិធី ABA Mobile</h1>
+              <div
+                class="img"
+                id="img-phone-title1"
+                style="width: 115px; height: 180px"
+              >
+                <img src="./assets/image/ABA_Instant-Account-EN.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="step" id="fastacc-step-2">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ១ :
+                  មុនដំបូងអ្នកចុចទៅលើការបើកគណនីរហ័សរួចត្រូវជ្រើសរើសខ្ញុំព្រមទទួលយកលក្ខខណ្ឌទាំងអស់។
+                </h3>
+                <br />
+                <h3>
+                  Step 1: You need to click open instant account and then choose
+                  agree with term and agreement and click agree.
+                </h3>
+              </div>
+              <div class="allImage" id="allImage">
+                <img src="./assets/image/fastAcount/img1.png" alt="image" />
+                <img src="./assets/image/fastAcount/img2.png" alt="image" />
+              </div>
+            </div>
+            <div class="step" id="fastacc-step-2">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ២ :
+                  បញ្ចូលលេខទូរស័ព្ទរួចធ្វើការរងចាំការបញ្ជូនសារកូដផ្ទៀងផ្ទាត់ OTP
+                  រួចចុចបន្ទាប់។
+                </h3>
+                <br />
+                <h3>
+                  Step 2: Enter your phone number and wait for code OTP that is
+                  sent to you via sms and click next.
+                </h3>
+              </div>
+              <div class="allImage" id="allImage">
+                <img
+                  src="./assets/image/fastAcount/PhoneNumber.png"
+                  alt="image"
+                />
+                <img
+                  src="./assets/image/fastAcount/OTP.png"
+                  style="border-bottom: 15px solid black"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="step" id="fastacc-step-2">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៣ :
+                  ធ្វើការប្រើប្រាស់មុខងារស្កេនមុខដោយផ្ទៀងផ្ទាត់មុខរបស់អ្នក។
+                </h3>
+                <br />
+                <h3>Step 3: Set up faceID scan by scanning your face.</h3>
+              </div>
+              <div id="allImage">
+                <img src="./assets/image/fastAcount/Verify.png" alt="image" />
+                <img src="./assets/image/fastAcount/Scan.png" alt="image" />
+              </div>
+            </div>
+            <div class="step" id="fastacc-step-2">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៤ :
+                  ការផ្ទៀងផ្ទាត់កាតអត្តសញ្ញាណប័ណត្រូវប្រាកដអត្តសញ្ញាណប័ណរបស់អ្នកជាអត្តសញ្ញាណប័ណខ្មែរច្បាប់ដើមហើយត្រូវថតនៅលើផ្ទៃរាបស្មើ។
+                </h3>
+                <br />
+                <h3>
+                  Step 4: Make sure your ID card is Cambodian ID card and you
+                  need to take a picture of it on flat surface.
+                </h3>
+              </div>
+              <div id="allImage">
+                <img
+                  src="./assets/image/fastAcount/Verify-card.png"
+                  alt="image"
+                />
+                <img
+                  src="./assets/image/fastAcount/card-personal.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="step" id="fastacc-step-3">
+              <div class="txt">
+                <h3>
+                  ជំហាន់ទី ៥ :
+                  ផ្ទៀងផ្ទាត់នូវព័ត៌មានរបស់អ្នករួចធ្វើការបង្កើតលេខសម្ងាត់៤ខ្ទង់ដែលអ្នកងាយចាំតែអ្នកដទៃមិនអាចទាយដឹងពេលបញ្ចប់អ្នកនឹងទទួលបានគណនី២គឺ
+                  គណនីប្រាក់រៀល និង ប្រាក់ដុល្លារ។
+                </h3>
+                <br />
+                <h3>
+                  Step 5: Take a careful look at your information and then
+                  create 4-digit code. As a result, you will get 2 account which
+                  are Riel and Dollar accounts.
+                </h3>
+              </div>
+              <div id="allImage-1">
+                <img
+                  src="./assets/image/fastAcount/information.png"
+                  alt="image"
+                />
+                <img
+                  src="./assets/image/fastAcount/VPNpasswoed.png"
+                  alt="image"
+                />
+                <img src="./assets/image/fastAcount/success.png" alt="image" />
+              </div>
+            </div>
+            <div class="step">
+              <div class="txt">
+                <h3>
+                  បើសិនជាអ្នកមិនទាន់ច្បាស់ត្រង់កន្លែងណាមួយអ្នកអាចមើលវីដេអូណែនាំនេះបន្ថែមបាន៖
+                </h3>
+                <h3>
+                  If you still find it difficult to understand here you can
+                  watch this video.
+                </h3>
+              </div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/tEptffYkebQ?si=kwCm4a47eJd7M0Y5"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <br /><br />
+          <br />
+          <div class="create-account" id="changeaccname">
+            <div class="head">
+              <h1 class="title">
+                + របៀបប្តូរឈ្មោះគណនីនៅក្នុងកម្មវិធី ABA Mobile
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title2"
+                style="width: 115px; height: 180px"
+              >
+                <img src="./assets/image/ABA_Instant-Account-EN.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="step1">
+              <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide>
+                  <div class="textsub">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    មុនដំបូងអ្នកត្រូវជ្រើសរើសយកគណនី
+                  </div>
+                  <div class="img">
+                    <img src="./assets/image/changeaccname1.png" alt="" />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="textsub">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    បន្ទាប់​មកជ្រើសរើសគណនីណាមួយដែលអ្នកចង់ប្តូរឈ្មោះរួចចុចទៅលើសញ្ញាត្រេ
+                    3
+                  </div>
+                  <div class="img">
+                    <img src="./assets/image/changeaccname2.png" alt="" />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="textsub">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    ជ្រើសរើសយកដូរឈ្មោះគណនី
+                  </div>
+                  <div class="img">
+                    <img src="./assets/image/changeaccname3.png" alt="" />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="textsub">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    រួចបំពេញឈ្មោះគណនីថ្មី
+                  </div>
+                  <div class="img">
+                    <img src="./assets/image/changeaccname4.png" alt="" />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="textsub" style="width: 30%">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    រួចបំពេញឈ្មោះគណនីថ្មីហើយចុចយល់ព្រមជាការស្រេចអ្នកនឹងទទួលបាននូវឈ្មោះគណនីថ្មី
+                  </div>
+                  <div class="img" style="width: 60%">
+                    <img
+                      style="width: 49%"
+                      src="./assets/image/changeaccname5.png"
+                      alt=""
+                    />
+                    <img
+                      style="width: 49%"
+                      src="./assets/image/changeaccname6.png"
+                      alt=""
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+          </div>
+          <br /><br /><br />
+          <div class="HowUseQr">
+            <div class="head">
+              <h1 class="title">+ របៀបប្រើប្រាស់ ABA QR</h1>
+              <div class="img" style="width: 115px; height: 180px">
+                <img src="./assets/image/ABA_Pay_EN.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <h3 class="QR-title" id="abaqrlinkacc">
+              <i class="fa-regular fa-hand-point-right"></i>
+              របៀប​ភ្ជាប់​គណនី​ទទួល​ សម្រាប់​ ABA QR
+            </h3>
+            <div class="step">
+              <div class="text">
+                <h3>
+                  ជំហាន់ទី ១ បើក​កម្មវិធី​ ABA​ Mobile​ ហើយ​ចុច​សញ្ញា​ពណ៌​ក្រហម​
+                  (​ប៊ូ​តុង​ ABA​ QR)​ នៅ​ជ្រុង​ស្ដាំ​ខាងលើ​ នៃ​អេ​ក្រង់​
+                </h3>
+                <h3>
+                  Step 1: Open the ABA Mobile app and click the red icon (ABA QR
+                  button) in the upper right corner of the screen.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/QR/Screenshot 2024-12-07 225427.png"
+                alt=""
+              />
+            </div>
+            <div class="step">
+              <div class="text">
+                <h3>
+                  ជំហាន់ទី 2 ចុច​ បើក​ឥឡូវ​ ហើយ​ជ្រើសរើស​គណនី​ដើម្បី​ភ្ជាប់​​
+                </h3>
+                <h3>
+                  Step 2: Click Open Now and select an account to connect;
+                </h3>
+              </div>
+              <img
+                src="./assets/image/QR/Screenshot 2024-12-07 225427.png"
+                alt=""
+              />
+            </div>
+            <div class="step">
+              <div class="text">
+                <h3>
+                  ជំហាន់ទី ៣ បញ្ចូល​លេខ​សម្ងាត់​ 4​ខ្ទង់​ ដើម្បី​បញ្ជាក់​
+                  ពេល​នោះ​ ABA​ QR​ របស់​អ្នក​នឹង​ត្រូវ​បង្កើត​រួចរាល់​
+                </h3>
+                <h3>
+                  Step 3: Enter a 4-digit password to confirm, then your ABA QR
+                  will be created.
+                </h3>
+              </div>
+              <img
+                src="./assets/image/QR/Screenshot 2024-12-07 225427.png"
+                alt=""
+              />
+            </div>
+
+            <h3 class="QR-title" id="abaqrreceive">
+              <i class="fa-regular fa-hand-point-right"></i>
+              របៀប​ទទួល​ប្រាក់​ដោយ​ប្រើ​ ABA QR
+            </h3>
+            <div class="card-QR">
+              <div class="card-step" style="border-start-start-radius: 30px">
+                <div>
+                  <h3 class="card-title">+ តាម​ QR​</h3>
+                  <p class="description">
+                    ​ពេល​នៅ​ជិត​អ្នក​ផ្ញើ​ សូម​បើក​ ABA​ Mobile​ របស់​អ្នក​
+                    ហើយ​ចុច​ប៊ូ​តុង​ ABA​ QR ឲ្យ​កូដ​បង្ហាញ​លើ​អេ​ក្រ់​
+                    ដើម្បី​អ្នក​ផ្ញើ​ អាច​ស្គែ​ន​បង់ប្រាក់​តាម​ ABA​ Mobile​
+                    របស់​ពួក​គេ​បាន​។
+                  </p>
+                </div>
+                <img
+                  id="card-useCArd"
+                  src="./assets/image/QR/aba_qr_scan_lp_kh.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-step" style="border-start-start-radius: 30px">
+                <div>
+                  <h3 class="card-title">+ តាម​លីង​ផ្ទេរ​ប្រាក់​</h3>
+                  <p class="description">
+                    ​ប្រសិនបើ​អ្នក​ចង់​ទទួល​ប្រាក់​ពី​អ្នក​ផ្ញើ​
+                    ដែល​មិន​នៅ​ជិត​អ្នក​ អ្នក​អាច​ផ្ញើ​ ABA​ QR ជា​លីង​
+                    ដោយ​ចុច​លើ​សញ្ញា​ ផ្ញើ​កូដ​ខាងក្រោម​ ABA​ QR​
+                    របស់​អ្នក​។​ជ្រើសរើស​បណ្ដាញ​ផ្ញើ​សារ​ ឬ​ឆាត​
+                    ណាមួយ​ដែល​អ្នក​ចង់​ប្រើ​ ហើយ​ផ្ញើ​កូដ​ជា​លីង​។​ អ្នក​ផ្ញើ​
+                    ត្រូវ​ចុច​លើ​លីង​ ឲ្យ​ ABA​ Mobile​
+                    របស់​គេ​បើក​ដោយ​ស្វ័យប្រវត្តិ​ ហើយ​ធ្វើការ​ផ្ទេរ​។​
+                  </p>
+                </div>
+                <img
+                  id="card-useCArd"
+                  src="./assets/image/QR/aba_id_sms_en.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h3 class="QR-title" id="paybyabaqr">
+              <i class="fa-regular fa-hand-point-right"></i>
+              របៀប​ផ្ញើ​ប្រាក់​តាម​ ABA​ QR
+            </h3>
+            <div class="card-QR">
+              <div class="card-step" style="border-start-start-radius: 30px">
+                <div>
+                  <h3 class="card-title">+ តាម​ QR​</h3>
+                  <p class="description">
+                    ​ស្គែ​ន​កូដ​ ABA​ QR​ របស់​អ្នក​ទទួល​ជាមួយ​ ABA​ Mobile​
+                    របស់​អ្នក​ ដាក់​ចំនួន​ត្រូវ​ផ្ញើ​ ហើយ​បញ្ចូល​លេខ​សម្ងាត់​
+                    4​ខ្ទង់​ ABA​ Mobile​ របស់​អ្នក​
+                    ដើម្បី​បញ្ជាក់​ជា​ការ​ស្រេច​។​ ​
+                  </p>
+                </div>
+                <img
+                  id="card-useCArd"
+                  src="./assets/image/QR/aba_qr_scan_lp_kh.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-step" style="border-start-start-radius: 30px">
+                <div>
+                  <h3 class="card-title">+ តាម​លីង​ផ្ទេរ​ប្រាក់​</h3>
+                  <p class="description">
+                    ចុច​លើ​លីង​ ABA​ QR​ របស់​អ្នក​ទទួល​ ដែល​គេ​ផ្ញើ​មក​តាម​ឆាត​
+                    ឬ​ messenger​ ឬ​ អ៊ីមែល​ ពេល​នោះ​ ABA​ Mobile​ របស់​អ្នក​
+                    នឹង​បើក​ដោយ​ស្វ័យប្រវត្តិ​។​ ដាក់​ចំនួន​ផ្ទេរ​
+                    និង​បញ្ចូល​លេខ​សម្ងាត់​ 4​ខ្ទង់​របស់​ ABA​ Mobile​
+                    ជា​ការ​ស្រេច​។​
+                  </p>
+                </div>
+                <img
+                  id="card-useCArd"
+                  src="./assets/image/QR/aba_id_sms_en.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <br /><br />
+          <div class="HowUseQr">
+            <div class="head" id="artificialcard">
+              <h1 class="title">
+                + របៀបបង្កើតកាតនិម្មិតនៅក្នុងកម្មវិធី ABA Mobile
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title3"
+                style="width: 200px; height: 180px"
+              >
+                <img src="./assets/image/pngwing.com.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">អ្នកត្រូវជ្រើសរើសយក card</p>
+                </div>
+                <img src="./assets/image/card/img1.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">ចុច new card</p>
+                </div>
+                <img src="./assets/image/card/img2.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">ចុច Virtual Debit Card</p>
+                </div>
+                <img src="./assets/image/card/img3.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">
+                    អ្នកត្រូវបំពេញព័ត៌មានដែលមានដូចក្នុងរូបដូចជាគណនីដែលត្រូវភ្ជាប់ជាមួយកាត,
+                    ប្រភេទកាតជាដើម។ រួចចុច I have read and agree to the Terms
+                    and Conditions ពេលរួចរាល់ចុច ISSUE NOW ជាការស្រេច។
+                  </p>
+                </div>
+                <img src="./assets/image/card/img4.png" alt="" />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញពីអត្ថប្រយោជន៍
+                    និងការប្រើប្រាស់របស់កាតនិម្មិត។
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/AYmb9iCSbis?si=lNP5K-IbLCBG7K7H"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <br /><br />
+          <br />
+          <div class="HowUseQr">
+            <div class="head" id="plasticcard">
+              <h1 class="title">
+                + របៀបបង្កើតPlastic Card ដោយប្រើកម្មវិធី ABA Mobile
+                និងដកយកកាតតាមរយៈម៉ាស៊ីននៅទីតាំងឬសាខាណាមួយរបស់ធនាគារ ABA
+              </h1>
+              <div class="img" style="width: 220px; height: 180px">
+                <img src="./assets/image/pngwing.com.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">អ្នកត្រូវជ្រើសរើសយក card</p>
+                </div>
+                <img src="./assets/image/card/img1.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">ចុច កាតថ្មី</p>
+                </div>
+                <img src="./assets/image/card/img2.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">ចុចកាតឥណពន្ធ</p>
+                </div>
+                <img src="./assets/image/card/img3.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">ជ្រើសរើសប្រភេទកាតដែលអ្នកចង់បាន</p>
+                </div>
+                <img src="./assets/image/card/img5.png" alt="" />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">បំពេញព័ត៌មានដែលគេដាក់ឲ្យ</p>
+                </div>
+                <img src="./assets/image/card/img6.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៦​</h3>
+                  <p class="description">
+                    ហើយកន្លែងទទួលកាតសូមជ្រើសយកភ្លាមៗពីម៉ាស៊ីនបើកកាត
+                  </p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard5.png"
+                  alt=""
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៧</h3>
+                  <p class="description">
+                    សូមជ្រើសរើសទីតាំងដែលអ្នកចង់បើកកាតរួចចុចបញ្ជាក់ទីតាំង
+                  </p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard6.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៨​</h3>
+                  <p class="description">ចុងក្រោយចុចស្នើសំុឥឡូវជាការស្រេច</p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard7.png"
+                  alt=""
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៩ ការប្រើប្រាស់ម៉ាសុីន</h3>
+                  <p class="description">ចុចលើចុចត្រង់នេះ</p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard8.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី១០​</h3>
+                  <p class="description">
+                    រួចបើកកម្មវិធី ABA Mobile
+                    របស់អ្នកជ្រើសរើសស្កេនដើម្បីបំពេញលក្ខខណ្ឌរបស់ម៉ាស៊ីន
+                  </p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard9.png"
+                  alt=""
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី១១</h3>
+                  <p class="description">
+                    បន្ទាប់ពីបានកាតហើយអ្នកត្រូវចូលទៅកាន់ ABA Mobile រួចចុច
+                    button ព័ណ៌ប្រផេះដើម្បីដំណើរការកាត
+                  </p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard10.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី១២​</h3>
+                  <p class="description">រួចធ្វើការបំពេញព័ត៌មានរបស់កាត</p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard11.png"
+                  alt=""
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី១៣</h3>
+                  <p class="description">បង្កើតលេខកូដរបស់កាតជាការស្រេច</p>
+                </div>
+                <img
+                  style="border: 10px solid white"
+                  src="./assets/image/plasticcard12.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <br />
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញពីអត្ថប្រយោជន៍
+                    និងការប្រើប្រាស់របស់កាតនិម្មិត។
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/0ULX01ldfxk?si=t72Bbs8-8KLMg96M"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <div class="footer">
+            <h1 class="typewriter">Thank You🙏..</h1>
+            <div class="line" id="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!--  Boxicon CDN JS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- link index.js -->
+    <script src="./js/index.js"></script>
+    <!-- search.js -->
+    <script src="./js/seaerch.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
