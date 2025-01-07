@@ -560,6 +560,7 @@
 
 .step1 swiper-slide .img img {
   border-radius: 20px;
+  object-fit: cover;
   border: 1px solid var(--color-gray);
 }
 
@@ -626,6 +627,7 @@
   width: 100%;
   padding-top: 20px;
   display: flex;
+  object-fit: cover;
   justify-content: space-evenly;
 }
 #allImage img {
