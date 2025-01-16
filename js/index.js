@@ -5,6 +5,53 @@ $(document).ready(function () {
     $(".limenu").removeClass("active");
     $(this).addClass("active");
   });
+
+  $("#activate").show();
+  $("#fastacc").hide();
+  $("#changeaccname").hide();
+  $("#Qr").hide();
+  $("#artcard").hide();
+  $("#plastic").hide();
+  $("#actacc").click(function () {
+    $("#activate").fadeIn();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+  });
+  $("#fastac").click(function () {
+    $("#activate").hide();
+    $("#fastacc").fadeIn();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+  });
+  $("#changename").click(function () {
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").fadeIn();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+  });
+  $("#QR").click(function () {
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").fadeIn();
+    $("#artcard").hide();
+    $("#plastic").hide();
+  });
+  $("#Card").click(function () {
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").fadeIn();
+    $("#plastic").fadeIn();
+  });
 });
 /**
  * YouTube Tutorial:
