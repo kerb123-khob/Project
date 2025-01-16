@@ -44,12 +44,20 @@ $(document).ready(function () {
     $("#artcard").hide();
     $("#plastic").hide();
   });
-  $("#Card").click(function () {
+  $("#artificCard").click(function () {
     $("#activate").hide();
     $("#fastacc").hide();
     $("#changeaccname").hide();
     $("#Qr").hide();
     $("#artcard").fadeIn();
+    $("#plastic").hide();
+  });
+  $("#plasticcd").click(function () {
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
     $("#plastic").fadeIn();
   });
 });
