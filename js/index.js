@@ -12,6 +12,10 @@ $(document).ready(function () {
   $("#Qr").hide();
   $("#artcard").hide();
   $("#plastic").hide();
+  $("#movieticket").hide();
+  $("#transfermoney").hide();
+  $("#receivemoney").hide();
+  $("#chatfunction").hide();
   $("#actacc").click(function () {
     $("#activate").fadeIn();
     $("#fastacc").hide();
@@ -19,6 +23,10 @@ $(document).ready(function () {
     $("#Qr").hide();
     $("#artcard").hide();
     $("#plastic").hide();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
   });
   $("#fastac").click(function () {
     $("#activate").hide();
@@ -27,6 +35,10 @@ $(document).ready(function () {
     $("#Qr").hide();
     $("#artcard").hide();
     $("#plastic").hide();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
   });
   $("#changename").click(function () {
     $("#activate").hide();
@@ -35,6 +47,10 @@ $(document).ready(function () {
     $("#Qr").hide();
     $("#artcard").hide();
     $("#plastic").hide();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
   });
   $("#QR").click(function () {
     $("#activate").hide();
@@ -43,6 +59,10 @@ $(document).ready(function () {
     $("#Qr").fadeIn();
     $("#artcard").hide();
     $("#plastic").hide();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
   });
   $("#artificCard").click(function () {
     $("#activate").hide();
@@ -51,6 +71,10 @@ $(document).ready(function () {
     $("#Qr").hide();
     $("#artcard").fadeIn();
     $("#plastic").hide();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
   });
   $("#plasticcd").click(function () {
     $("#activate").hide();
@@ -59,6 +83,58 @@ $(document).ready(function () {
     $("#Qr").hide();
     $("#artcard").hide();
     $("#plastic").fadeIn();
+    $("#movieticket").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
+  });
+  $("#buyticket").click(function () {
+    $("#movieticket").fadeIn();
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+    $("#transfermoney").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
+  });
+  $("#transfer").click(function () {
+    $("#transfermoney").fadeIn();
+    $("#movieticket").hide();
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+    $("#receivemoney").hide();
+    $("#chatfunction").hide();
+  });
+  $("#receive").click(function () {
+    $("#receivemoney").fadeIn();
+    $("#transfermoney").hide();
+    $("#movieticket").hide();
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
+    $("#chatfunction").hide();
+  });
+  $("#chat").click(function () {
+    $("#chatfunction").fadeIn();
+    $("#receivemoney").hide();
+    $("#transfermoney").hide();
+    $("#movieticket").hide();
+    $("#activate").hide();
+    $("#fastacc").hide();
+    $("#changeaccname").hide();
+    $("#Qr").hide();
+    $("#artcard").hide();
+    $("#plastic").hide();
   });
 });
 /**

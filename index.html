@@ -58,96 +58,161 @@
     </div>
     <div class="content-container">
       <div class="navbar-container" id="content">
-        <nav>
-          <ul class="navbar">
-            <li id="actacc">
-              <span class="limenu">
-                <a href="#activate">
-                  <i class="icon fa-solid fa-mobile-screen"></i>
-                  របៀបActivate ABA Mobile</a
-                >
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </span>
-            </li>
-            <li id="fastac">
-              <span class="limenu">
-                <a href="#fastacc">
-                  <i class="icon fa-solid fa-user-tag"></i>
-                  របៀបបើកគណនីរហ័សនៅក្នុងកម្មវិធី ABA Mobile</a
-                >
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </span>
-            </li>
-            <li id="changename">
-              <span class="limenu">
-                <a href="#changeaccname">
-                  <i class="icon fa-solid fa-dollar-sign"></i>
-                  រ​បៀបប្តូរឈ្មោះគណនីនៅក្នុងកម្មវិធី ABA Mobile
+        <ul class="navbar">
+          <li id="actacc">
+            <span class="limenu">
+              <a href="#activate">
+                <i class="icon fa-solid fa-mobile-screen"></i>
+                របៀបActivate ABA Mobile</a
+              >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li>
+          <li id="fastac">
+            <span class="limenu">
+              <a href="#fastacc">
+                <i class="icon fa-solid fa-user-tag"></i>
+                របៀបបើកគណនីរហ័ស</a
+              >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li>
+          <li id="changename">
+            <span class="limenu">
+              <a href="#changeaccname">
+                <i class="fa-regular fa-user" style="margin-left: 7px"></i>
+                រ​បៀបប្តូរឈ្មោះគណនី
+              </a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li>
+          <!-- <li id="transfer">
+            <span class="limenu">
+              <a href="#transfermoney">
+                <i
+                  class="fa-solid fa-money-check-dollar"
+                  style="margin-left: 7px"
+                ></i>
+                រ​បៀបផ្ញើប្រាក់ និងទទួលប្រាក់ក្រៅប្រទេស
+              </a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li> -->
+          <li id="buyticket">
+            <span class="limenu">
+              <a href="#movieticket">
+                <i class="fa-solid fa-ticket" style="margin-left: 7px"></i>
+                រ​បៀបទិញសំបុត្រកុន
+              </a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li>
+          <li id="chat">
+            <span class="limenu">
+              <a href="#chatfunction">
+                <i class="fa-brands fa-rocketchat" style="margin-left: 7px"></i>
+                របៀបប្រើប្រាស់ Chat Function
+              </a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </span>
+          </li>
+          <li class="ABA-QR" id="QR">
+            <span class="limenu">
+              <a href="#header">
+                <i class="icon fa-solid fa-qrcode"></i>
+                អំពី ABA QR
+              </a>
+              <i class="close fa-solid fa-angle-right" id="down"></i>
+              <!-- <i class="open fa-solid fa-angle-up" id="up"></i> -->
+            </span>
+            <ul class="dropdown" id="QR-submenu">
+              <li id="li">
+                <a href="#Qr">
+                  <i class="fa-solid fa-qrcode"></i>
+                  របៀបបើក ABA QR នៅក្នុង ABA Mobile
                 </a>
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </span>
-            </li>
-            <li class="ABA-QR" id="QR">
-              <span class="limenu">
-                <a href="#header">
-                  <i class="icon fa-solid fa-qrcode"></i>
-                  អំពី ABA QR
-                </a>
-                <i class="close fa-solid fa-angle-right" id="down"></i>
-                <!-- <i class="open fa-solid fa-angle-up" id="up"></i> -->
-              </span>
-              <ul class="dropdown" id="QR-submenu">
-                <li id="li">
-                  <a href="#Qr">
-                    <i class="fa-solid fa-qrcode"></i>
-                    របៀបបើក ABA QR នៅក្នុង ABA Mobile
-                  </a>
-                </li>
-                <!-- <li id="li">
+              </li>
+              <!-- <li id="li">
                   <a href="#abaqrlinkacc">
                     <i class="fa-solid fa-hand-holding-dollar"></i>
                     របៀប​ភ្ជាប់​គណនី​ទទួល​ សម្រាប់​ ABA QR
                   </a>
                 </li> -->
-                <li id="li">
-                  <a href="#abaqrreceive">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    ​របៀប​ទទួល​ប្រាក់​ដោយ​ប្រើ​ ABA QR
-                  </a>
-                </li>
-                <li id="li">
-                  <a href="#paybyabaqr">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    ​របៀប​ផ្ញើ​ប្រាក់​តាម​ ABA QR
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="Card" id="Card">
-              <span class="limenu">
-                <a href="#artcard">
-                  <i class="icon fa-brands fa-cc-visa"></i>
-                  អំពីកាត
+              <li id="li">
+                <a href="#abaqrreceive">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  ​របៀប​ទទួល​ប្រាក់​ដោយ​ប្រើ​ ABA QR
                 </a>
-                <i class="fa-solid fa-angle-right" id="cardIcondown"></i>
-                <!-- <i class="open fa-solid fa-angle-up" id="cardIconup"></i> -->
-              </span>
-              <ul class="dropdown" id="Credit-Card">
-                <li id="artificCard">
-                  <a href="#artificialcard">
-                    <i class="fa-regular fa-credit-card"></i>
-                    កាតនិម្មិតលើទូរស័ព្ទ
+              </li>
+              <li id="li">
+                <a href="#paybyabaqr">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  ​របៀប​ផ្ញើ​ប្រាក់​តាម​ ABA QR
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="Card" id="Card">
+            <span class="limenu">
+              <a href="#artcard">
+                <i class="icon fa-brands fa-cc-visa"></i>
+                អំពីកាត
+              </a>
+              <i class="fa-solid fa-angle-right" id="cardIcondown"></i>
+              <!-- <i class="open fa-solid fa-angle-up" id="cardIconup"></i> -->
+            </span>
+            <ul class="dropdown" id="Credit-Card">
+              <li id="artificCard">
+                <a href="#artificialcard">
+                  <i class="fa-regular fa-credit-card"></i>
+                  កាតនិម្មិតលើទូរស័ព្ទ
+                </a>
+              </li>
+              <li id="plasticcd">
+                <a href="#plastic">
+                  <i class="fa-solid fa-credit-card"></i>
+                  កាតប្លាស្ទិកលើទូរស័ព្ទ
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="Card" id="Card">
+            <span class="limenu">
+              <a href="#artcard">
+                <i class="fa-solid fa-earth-asia"></i>
+                ការទូទាត់ប្រាក់ក្រៅប្រទេស
+              </a>
+              <i class="fa-solid fa-angle-right" id="cardIcondown"></i>
+              <!-- <i class="open fa-solid fa-angle-up" id="cardIconup"></i> -->
+            </span>
+            <ul class="dropdown" id="Credit-Card">
+              <li id="transfer">
+                <span class="limenu">
+                  <a href="#transfermoney">
+                    <i
+                      class="fa-solid fa-money-check-dollar"
+                      style="margin-left: 7px"
+                    ></i>
+                    រ​បៀបផ្ញើប្រាក់ទៅក្រៅប្រទេស
                   </a>
-                </li>
-                <li id="plasticcd">
-                  <a href="#plastic">
-                    <i class="fa-solid fa-credit-card"></i>
-                    កាតប្លាស្ទិកលើទូរស័ព្ទ
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </li>
+              <li id="receive">
+                <span class="limenu">
+                  <a href="#receivemoney">
+                    <i
+                      class="fa-solid fa-money-check-dollar"
+                      style="margin-left: 7px"
+                    ></i>
+                    រ​បៀបទទួលប្រាក់ពីក្រៅប្រទេស
                   </a>
-                </li>
-              </ul>
-            </li>
-            <!-- <li class="transfer" id="transfer">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="transfer" id="transfer">
               <span class="limenu">
                 <a>
                   <i class="icon fa-solid fa-arrow-right-arrow-left"></i>
@@ -174,11 +239,10 @@
                 </li>
               </ul>
             </li> -->
-          </ul>
-          <div class="imgfoot">
-            <img src="./assets/image/footerlogo.png" alt="" />
-          </div>
-        </nav>
+        </ul>
+        <!-- <div class="imgfoot">
+          <img src="./assets/image/footerlogo.png" alt="" />
+        </div> -->
       </div>
       <div class="main-container">
         <div class="main-content">
@@ -267,14 +331,14 @@
                 alt="image"
                 class="img-1"
                 id="SMS-1"
-                style="height: 80%; width: 330px"
+                style="height: 80%; width: 330px; border: 3px solid white"
               />
               <img
                 src="./assets/image/Activate/activate5.png"
                 alt="image"
                 id="SMS-1"
                 class="img-1"
-                style="height: 80%; width: 330px"
+                style="height: 80%; width: 330px; border: 3px solid white"
               />
             </div>
             <div class="step" id="step-5" style="height: 750px">
@@ -293,11 +357,11 @@
                 src="./assets/image/Activate/activate6.png"
                 alt="image"
                 id="UserP"
-                style="height: 80%; width: 330px"
+                style="height: 90%; width: 330px; border: 3px solid white"
               />
               <img
                 src="./assets/image/Activate/activate7.png"
-                style="height: 80%; width: 330px"
+                style="height: 90%; width: 330px; border: 3px solid white"
                 alt=""
                 id="UserP"
               />
@@ -963,6 +1027,434 @@
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/0ULX01ldfxk?si=t72Bbs8-8KLMg96M"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <div class="HowUseQr" id="movieticket">
+            <div class="head" id="artificialcard">
+              <h1 class="title" style="margin-right: 10px">
+                + រ​បៀបទិញសំបុត្រកុន
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title3"
+                style="width: 100px; height: 200px; object-fit: cover"
+              >
+                <img src="./assets/image/movie6.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">ចុចលើសំបុត្រកុន</p>
+                </div>
+                <img src="./assets/image/movie3.jpg" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">
+                    នោះយើងនឹងមកដល់ផ្ទាំងភាពយន្តជាច្រើនរួចជ្រើសរើសរឿងដែលអ្នកចង់ទស្សនា
+                  </p>
+                </div>
+                <img src="./assets/image/movie1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">
+                    បន្ទាប់ពីជ្រើសរើសរឿងរួចសូមចុចរើសទីតាំងរោងភាពយន្ត
+                    និងម៉ោងដែលអ្នកចង់បាន
+                  </p>
+                </div>
+                <img src="./assets/image/movie2.jpg" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">
+                    បន្ទាប់មកទៀតនឹងមានផ្ទាំងកៅអីសម្រាប់យើងជ្រើសរើសរួចធ្វើការចុចលើពាក្យ
+                    confirm
+                  </p>
+                </div>
+                <img src="./assets/image/movie4.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">នោះយើងនឹងអាចបង់ប្រាក់បានហើយ</p>
+                </div>
+                <img src="./assets/image/movie5.jpg" alt="" />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញពីការទិញសំបុត្រកុន
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/50Y7D4Hb2OQ?si=LId61Axlllk8sD8m"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <div class="HowUseQr" id="transfermoney">
+            <div class="head" id="artificialcard">
+              <h1 class="title" style="margin-right: 10px">
+                + រ​បៀបផ្ទេរប្រាក់ទៅក្រៅប្រទេស
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title3"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  object-fit: cover;
+                  display: flex;
+                "
+              >
+                <img src="./assets/image/rialogo.jpg" alt="" />
+                <img src="./assets/image/moneygram.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">ចុចលើផ្ទេរប្រាក់</p>
+                </div>
+                <img src="./assets/image/transfer1.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">ចុចផ្ទេរប្រាក់អន្តរជាតិ</p>
+                </div>
+                <img src="./assets/image/transfer2.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">ចុចសេវាផ្ទេរប្រាក់Ria</p>
+                </div>
+                <img src="./assets/image/transfer3.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">ចុចទទួលប្រាក់</p>
+                </div>
+                <img src="./assets/image/transfer4.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">
+                    ធ្វើការបំពេញព័ត៌មានដែលគេតម្រូវបន្ទាប់មកចុចខ្ញុំបានអាន
+                    និងយល់ព្រមតាមលក្ខខណ្ឌទាំងនេះរួចចុចផ្ទេរជាការស្រេច
+                  </p>
+                </div>
+                <img src="./assets/image/transfer7.png" alt="" />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញបន្ថែមពីការផ្ទេរប្រាក់ទៅក្រៅប្រទេស
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/phfgNbNY6-w?si=3jkMJezrM2iMsxVs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <div class="HowUseQr" id="receivemoney">
+            <div class="head" id="artificialcard">
+              <h1 class="title" style="margin-right: 10px">
+                + រ​បៀបទទួលប្រាក់ពីក្រៅប្រទេស
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title3"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  object-fit: cover;
+                  display: flex;
+                "
+              >
+                <img src="./assets/image/rialogo.jpg" alt="" />
+                <img src="./assets/image/moneygram.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">ចុចលើផ្ទេរប្រាក់</p>
+                </div>
+                <img src="./assets/image/transfer1.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">ចុចផ្ទេរប្រាក់អន្តរជាតិ</p>
+                </div>
+                <img src="./assets/image/transfer2.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">ចុចសេវាផ្ទេរប្រាក់Ria</p>
+                </div>
+                <img src="./assets/image/transfer3.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">ចុចផ្ញើប្រាក់</p>
+                </div>
+                <img src="./assets/image/transfer4.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">
+                    ធ្វើការបំពេញលេខ11ខ្ទង់ដែលអ្នកផ្ញើបានឲ្យមកយើងចុចបញ្ចូលគណនីរួចចុចបញ្ជាក់
+                  </p>
+                </div>
+                <img
+                  src="./assets/image/receive1.png"
+                  alt=""
+                  style="height: 500px; object-fit: contain"
+                />
+                <img
+                  src="./assets/image/receive6.jpg"
+                  alt=""
+                  style="height: 500px; object-fit: contain"
+                />
+                <img
+                  src="./assets/image/receive2.png"
+                  alt=""
+                  style="height: 500px; object-fit: contain"
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">
+                    វាយលេខសំងាត់របស់គណនីរបស់អ្នកជាការស្រេច
+                  </p>
+                </div>
+
+                <img
+                  src="./assets/image/receive3.png"
+                  alt=""
+                  style="height: 500px; object-fit: contain"
+                />
+                <img
+                  src="./assets/image/receive4.png"
+                  alt=""
+                  style="height: 500px; object-fit: contain"
+                />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញបន្ថែមពីការទទួលប្រាក់ពីក្រៅប្រទេស
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/phfgNbNY6-w?si=3jkMJezrM2iMsxVs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  style="border-radius: 20px"
+                ></iframe>
+              </div>
+              <br />
+            </div>
+            <br /><br />
+            <br />
+          </div>
+          <div class="HowUseQr" id="chatfunction">
+            <div class="head" id="artificialcard">
+              <h1 class="title" style="margin-right: 10px">
+                + រ​បៀបប្រើប្រាស់ Chat
+              </h1>
+              <div
+                class="img"
+                id="img-phone-title3"
+                style="width: 150px; height: 100px; object-fit: contain"
+              >
+                <img src="./assets/image/chat.png" alt="" />
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី១</h3>
+                  <p class="description">ចុចលើរូបសញ្ញាឆាត</p>
+                </div>
+                <img src="./assets/image/chat0.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div class="Ecard-step">
+                  <h3 class="card-title">+ ជំហានទី២​</h3>
+                  <p class="description">
+                    នោះយើងនឹងទៅដល់ផ្ទាំងលក្ខខណ្ឌរួចធ្វើការចុចaccept terms and
+                    conditions និងចុច let's get start
+                  </p>
+                </div>
+                <img src="./assets/image/chat7.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៣</h3>
+                  <p class="description">
+                    អ្នកអាចជ្រើសរើសជម្រើស 2 ចង់បាន contact
+                    ទាំងអស់ឬកំណត់ទៅតាមអ្វីដែលអ្នកចង់បាន
+                  </p>
+                </div>
+                <img src="./assets/image/chat8.jpg" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៤​</h3>
+                  <p class="description">
+                    នោះអ្នកអាចជ្រើសរើស contact
+                    ណាមួយដើម្បីឆាតបានហើយជាពិសេសអ្នកអាចឆាតបានគ្រប់ភាសាផងដែរ
+                  </p>
+                </div>
+                <img src="./assets/image/chat1.png" alt="" />
+              </div>
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">
+                    អ្នកក៏អាចផ្ញើប្រាក់តាមរយៈឆាតនេះបានផងដែរដោយគ្រាន់តែចុចប៊ូតុងពណ៌ក្រហម
+                  </p>
+                </div>
+                <img
+                  src="./assets/image/chat2.png"
+                  alt=""
+                  style="object-fit: contain"
+                />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៦</h3>
+                  <p class="description">
+                    បំពេញចំនួនទឹកប្រាក់ដែលអ្នកចង់ផ្ញើរួចចុចផ្ញើ
+                  </p>
+                </div>
+                <img src="./assets/image/chat3.png" alt="" />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <h3 class="card-title">+ ជំហានទី៥</h3>
+                  <p class="description">បំពេញនូវលេខសំងាត់របស់អ្នកជាការស្រេច</p>
+                </div>
+                <img src="./assets/image/chat4.png" alt="" />
+              </div>
+              <div class="card-step" style="border-radius: 20px">
+                <div>
+                  <!-- <h3 class="card-title">+ ជំហានទី៥</h3> -->
+                  <p class="description">
+                    អ្នកក៏អាចមើលនូវប្រតិបត្តិការលំអិតបានដែរដោយមិនចាំបាច់ចូលទៅកាន់គណនីឡើយដោយគ្រាន់តែចុចលើចំនួនទឹកប្រាក់នៅក្នុងឆាតរបស់អ្នកនោះប្រតិបត្តិការលំអិតនឹង
+                    Pop up មក
+                  </p>
+                </div>
+                <img
+                  src="./assets/image/chat5.png"
+                  alt=""
+                  style="object-fit: contain"
+                />
+              </div>
+              <br />
+            </div>
+            <div class="card-QR">
+              <div class="card-step" style="border-radius: 20px; width: 100%">
+                <div>
+                  <p class="description" style="margin-left: 20px">
+                    នេះជាវីដេអូបង្ហាញបន្ថែមពីការផ្ទេរប្រាក់ទៅក្រៅប្រទេស
+                  </p>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/S8uUVlS98MI?si=psIfjA2C4nlCWzxG"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
